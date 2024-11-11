@@ -1,0 +1,113 @@
+/* Container styling */
+
+.Signup-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.Signup-container:hover {
+    transform: translateY(-5px);
+    /* Subtle hover effect */
+}
+
+
+/* Headline styling */
+
+h3 {
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+
+/* Input fields styling */
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 16px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #00aaff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 170, 255, 0.3);
+}
+
+
+/* Password icon styling */
+
+div[style*="relative"] {
+    display: flex;
+    align-items: center;
+}
+
+.FontAwesomeIcon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+    transition: color 0.3s;
+}
+
+.FontAwesomeIcon:hover {
+    color: #00aaff;
+}
+
+
+/* Error message styling */
+
+p {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+
+/* Button styling */
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0088cc;
+}
+
+
+/* Link styling */
+
+p>a {
+    color: #00aaff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+p>a:hover {
+    text-decoration: underline;
+}

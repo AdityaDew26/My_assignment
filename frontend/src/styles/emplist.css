@@ -1,0 +1,222 @@
+/* EmployeeList.css */
+
+.employee-list-container {
+    margin: 20px;
+}
+
+.employee-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.employee-table th,
+.employee-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.employee-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.employee-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.edit-button,
+.delete-button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: none;
+    color: white;
+}
+
+.edit-button {
+    background-color: #4CAF50;
+}
+
+.edit-button:hover {
+    background-color: #45a049;
+}
+
+.delete-button {
+    background-color: #f44336;
+}
+
+.delete-button:hover {
+    background-color: #d32f2f;
+}
+
+@media (max-width: 768px) {
+    .employee-table th,
+    .employee-table td {
+        padding: 8px;
+    }
+}
+
+
+/* Create Emp */
+
+
+/* Basic Styling for the Employee List Container */
+
+.employee-list-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Header Styling */
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+/* Employee Form Styling */
+
+.employee-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.employee-form input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.employee-form input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+
+/* Submit Button Styling */
+
+.employee-form button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.employee-form button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Employee List Styling */
+
+.employee-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+
+/* Individual Employee Item Styling */
+
+.employee-item {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(33% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.employee-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.employee-item h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.employee-item p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.employee-item button {
+    background-color: #28a745;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.employee-item button:hover {
+    background-color: #218838;
+}
+
+.employee-item button:last-child {
+    background-color: #dc3545;
+}
+
+.employee-item button:last-child:hover {
+    background-color: #c82333;
+}
+
+
+/* Make Employee List Responsive */
+
+@media (max-width: 768px) {
+    .employee-list {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .employee-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .employee-form {
+        width: 100%;
+        padding: 15px;
+    }
+    .employee-form input,
+    .employee-form button {
+        font-size: 14px;
+    }
+    .employee-list {
+        gap: 10px;
+    }
+}
